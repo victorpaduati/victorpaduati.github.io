@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pádua Joias</title>
+	<meta name="author" content="Victor Pádua" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-language" content="pt-br" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+	<link href="fontawesome/css/brands.css" rel="stylesheet">
+	<link href="fontawesome/css/solid.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/carousel.rtl.css" /> -->
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-danger fixed-top bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PÁDUA JOIAS</a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="O que deseja?">
+          <input class="form-control me-2" type="O que deseja?" placeholder="O que deseja?" aria-label="O que deseja?">
+          <button class="btn btn-dark" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/banner1.png" width="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <!-- <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p> -->
+            <p><a class="btn btn-lg btn-danger" href="#">Aproveite</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner2.png" width="100%">
+        <div class="container">
+          <div class="carousel-caption">
+            <!-- <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p> -->
+            <p><a class="btn btn-lg btn-danger" href="#">Saber mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner3.png" width="100%">
+	  
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <!-- <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p> -->
+            <p><a class="btn btn-lg btn-warning" href="#">Navegar na galeria</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+	 
+        <img src="img/caminhao.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2 class="fw-normal">FRETE GRÁTIS!</h2>
+        <p>Para todo o Brasil</p>
+        <p><a class="btn btn-warning" href="#">Ver detalhes &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+         <img src="img/cartao.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2 class="fw-normal">ATÉ 10X SEM JUROS</h2>
+        <p>Todos os cartões de crédito!</p>
+        <p><a class="btn btn-warning" href="#">Ver detalhes &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/porcentagem.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2 class="fw-normal">10% DE DESCONTO</h2>
+        <p>via PIX, depósito ou transferência</p>
+        <p><a class="btn btn-warning" href="#">Ver detalhes &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+	<div class="row">
+	  <div class="col"></div>
+	  <!-- <div class="col"><a href="index.html"><img src="img/rodape.png" width="100%"></a></div> -->
+	  <div class="col"></div>
+	</div>
+	<div class="row">
+	  <div class="col-sm-4"><a href="index.html"><img src="" width="100%"></a></div>
+	  <div class="col-sm-8">
+		<nav>
+			<!-- Menu de navegação -->
+			<!-- <ul class="nav  nav-pills">
+				<li class="nav-item"><a href="#logo" class="nav-link active">Home</a></li>
+				<li><a href="#produto" class="nav-link">Produtos</a></li>
+				<li><a href="#mapa" class="nav-link">Localização</a></li>
+				<li><a href="#contato" class="nav-link">Contato</a></li>
+				<li><a href="bootstrap.html" target="_blank" class="nav-link">BootStrap</a></li>
+			</ul> -->
+		</nav>
+	  </div>
+	</div>
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 "> <span class="text-muted titulo-dourado">Corrente + Pingente</span></h2>
+        <p class="lead">Qualquer look básico pode ser transformado com a joia ideal! Para os dias ruins, há sempre uma Corrente com Pingente que deixa qualquer homem no estilo. Garanta já sua joia com a maior Qualidade e Excelência do Brasil!</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/corrente.pingente.png" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1 "> <span class="text-muted titulo-dourado">Brincos</span></h2>
+        <p class="lead">Qualquer look básico pode ser transformado com a joia ideal! Para os dias ruins, há sempre um par de Brincos que deixa qualquer homem no estilo. Garanta já sua joia com a maior Qualidade e Excelência do Brasil!</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="img/brincos.png" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 "> <span class="text-muted titulo-dourado">Pulseiras</span></h2>
+        <p class="lead">Qualquer look básico pode ser transformado com a joia ideal! Para os dias ruins, há sempre uma Pulseira que deixa qualquer homem no estilo. Garanta já sua joia com a maior Qualidade e Excelência do Brasil!</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/pulseira.png" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+	<a href="https://api.whatsapp.com/send?phone=5531999111037&text=Texto%20aqui"
+		target="_blank"
+		style="position:fixed;bottom:20px;right:30px;">
+		<img src="img/whatsapp.png" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+	</a>
+  <!-- FOOTER -->
+  <footer class="container">
+	<i class="fa-brands fa-square-facebook fa-2x" style="color:#0885ec"></i>
+	<i class="fa-brands fa-instagram fa-2x" style="color:#bf47dd"></i>
+	<i class="fa-brands fa-linkedin fa-2x" style="color:#0512c2"></i>
+	<i class="fa-brands fa-youtube fa-2x" style="color:#ff0000"></i>
+    <p class="float-end"><a href="#">Voltar ao topo</a></p>
+    <p>&copy; Copyleft 2022 - Desenvolvido por Victor Pádua &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+	<script src="https://kit.fontawesome.com/eb194fe4df.js" crossorigin="anonymous"></script>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-link">Link</button> -->
+      
+  </body>
+</body>
+</html>
